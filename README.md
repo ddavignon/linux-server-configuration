@@ -36,6 +36,9 @@ This project uses [Amazon Lightsail](https://amazonlightsail.com/) to create a L
     
             sudo apt-get update
             sudo apt-get upgrade
+            
+        auto upgrades run
+            sudo dpkg-reconfigure --priority=low unattended-upgrades
     - Change the SSH port from 22 to 2200. Make sure to configure the Lightsail firewall to allow it.
             
             sudo vim /etc/ssh/sshd_config
